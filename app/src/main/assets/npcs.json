@@ -1,0 +1,1360 @@
+{
+    "npc": [
+        {
+            "id": 1,
+            "name": "Zuleika Gator",
+            "age": 55,
+            "bio": "Se não sabe a diferença entre um teiú e um calango,   nem adianta deslizar pra direita.",
+            "img": "",
+            "gender":"female",
+            "npc":"Zuleika, a Professora Caminhoneira dos Lagartos",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Oi, gatinho. Já estudou répteis hoje?",
+                    "options": [
+                        {
+                            "text": "Na verdade, não sei nem o que é um réptil direito.",
+                            "next": 2
+                        },
+                        {
+                            "text": "Claro! Inclusive, sei identificar um calango a quilômetros.",
+                            "next": 3
+                        },
+                        {
+                            "text": "Só queria elogiar o nome do seu caminhão. 'Jacarezinho' é genial.",
+                            "next": 4
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Ai, ai... esse país tá mesmo falhando na educação básica.",
+                    "options": [
+                        {
+                            "text": "Me ensina então, professora!",
+                            "next": 5
+                        },
+                        {
+                            "text": "Bom... vou embora antes que vire trabalho voluntário.",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Uau! Um herpetólogo de Tinder? Agora vi de tudo.",
+                    "options": [
+                        {
+                            "text": "Sou apenas um entusiasta com muito tempo livre.",
+                            "next": 7
+                        },
+                        {
+                            "text": "Talvez o destino esteja colocando dois lagartófilos no mesmo caminho.",
+                            "next": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Obrigada! Jacarezinho é mais do que um caminhão, é um estilo de vida.",
+                    "options": [
+                        {
+                            "text": "Vocês viajam juntos há muito tempo?",
+                            "next": 9
+                        },
+                        {
+                            "text": "Ele também ronca quando dorme?",
+                            "next": 10
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Com prazer. Mas aviso: depois da aula, vem prova surpresa.",
+                    "options": [
+                        {
+                            "text": "Pode vir! Já abri o caderno imaginário.",
+                            "next": 11
+                        },
+                        {
+                            "text": "Ok, não tô preparado pra tanto compromisso emocional.",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Boa viagem, então. Mas lembre-se: todo calango merece respeito.",
+                    "options": []
+                },
+                {
+                    "id": 7,
+                    "text": "A solidão cria hobbies estranhos, né?",
+                    "options": [
+                        {
+                            "text": "Mas nem tão estranhos quanto nomear um caminhão.",
+                            "next": 10
+                        },
+                        {
+                            "text": "Pelo menos não sou obcecado por mamíferos!",
+                            "next": 12
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "O destino, ou o algoritmo... ambos são misteriosos.",
+                    "options": [
+                        {
+                            "text": "Topa uma carona filosófica?",
+                            "next": 13
+                        },
+                        {
+                            "text": "Será que nossos caminhos se cruzam ou só colidem?",
+                            "next": 14
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Desde 2017. Já atravessamos o Brasil quatro vezes.",
+                    "options": [
+                        {
+                            "text": "Uau. Isso é mais estabilidade do que meus relacionamentos.",
+                            "next": 14
+                        },
+                        {
+                            "text": "Ele já quebrou seu coração?",
+                            "next": 12
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Só quando está com diesel adulterado.",
+                    "options": [
+                        {
+                            "text": "Acontece com os melhores.",
+                            "next": 13
+                        },
+                        {
+                            "text": "Você também ronca, Zuleika?",
+                            "next": 15
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Primeira pergunta: lagarto é sinônimo de jacaré?",
+                    "options": [
+                        {
+                            "text": "Claro que não! Isso seria um crime biológico.",
+                            "next": 14
+                        },
+                        {
+                            "text": "Sim? Eles são todos verdinhos, né?",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "É... acho que essa conversa virou um beco sem saída. Boa sorte aí.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Só se você não enjoar com o balanço do caminhão.",
+                    "options": [
+                        {
+                            "text": "Pode ser que eu enjoe... de você não.",
+                            "next": 16
+                        },
+                        {
+                            "text": "É, acho melhor eu seguir a pé.",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "text": "Talvez a gente só esteja girando feito um lagarto atrás do próprio rabo.",
+                    "options": [
+                        {
+                            "text": "Filosofia + zoologia. Esse papo tá ficando sério.",
+                            "next": 15
+                        },
+                        {
+                            "text": "Acho que prefiro correr atrás de outro match.",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "text": "Você fala demais. Jacarezinho já teria ido embora.",
+                    "options": []
+                },
+                {
+                    "id": 16,
+                    "text": "Hmm... ousado. Mas ousadia sem conhecimento herpetológico não me conquista.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Dário Luz",
+            "age": 39,
+            "bio": "Se tua aura não combinar com a minha, o universo não vai conspirar...",
+            "img": "",
+            "npc": "Dário, o Ex-Monge Influencer Espiritual",
+            "gender":"male",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Namastê, alma cintilante. Senti tua vibração antes mesmo do match.",
+                    "options": [
+                        {
+                            "text": "Namastê! Também senti uma energia forte... talvez meu celular vibrando.",
+                            "next": 2
+                        },
+                        {
+                            "text": "Você sempre começa assim ou é só com quem tem Vênus em peixes?",
+                            "next": 3
+                        },
+                        {
+                            "text": "Cara, esse filtro de incenso na selfie ficou meio forçado, hein.",
+                            "next": 4
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "O celular é apenas um reflexo material da conexão entre nossas almas.",
+                    "options": [
+                        {
+                            "text": "Uau. Você é tipo um modem espiritual?",
+                            "next": 5
+                        },
+                        {
+                            "text": "Certo... e onde eu compro esse cristal aí do seu colar?",
+                            "next": 6
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Vênus em peixes? Nossa... você entende mesmo do cosmos.",
+                    "options": [
+                        {
+                            "text": "Estudei astrologia na faculdade da vida e em comentários do Instagram.",
+                            "next": 7
+                        },
+                        {
+                            "text": "Mentira, chutei. Mas fico feliz que colou.",
+                            "next": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Você ousa questionar minha estética etérea? Isso é um ataque à minha essência visual!",
+                    "options": [
+                        {
+                            "text": "Talvez seu ego precise de um retiro, irmão.",
+                            "next": 9
+                        },
+                        {
+                            "text": "Calma, respira fundo. Imagina uma pedra ametista agora.",
+                            "next": 10
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Exatamente. Vivo no Wi-Fi da consciência universal.",
+                    "options": [
+                        {
+                            "text": "E sua senha é 'chakralivre123'?",
+                            "next": 11
+                        },
+                        {
+                            "text": "Você pega sinal até no astral?",
+                            "next": 12
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Esse cristal se chama Larimar Cósmico. R$ 222, com frete grátis e alinhamento de chakras incluso.",
+                    "options": [
+                        {
+                            "text": "Se eu pagar em 3 vezes, vem com energia parcelada?",
+                            "next": 13
+                        },
+                        {
+                            "text": "Você sempre mistura misticismo com marketing?",
+                            "next": 14
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Você é exatamente o tipo de alma que atrai engajamento... digo, iluminação.",
+                    "options": [
+                        {
+                            "text": "A gente pode alinhar os chakras... ou os interesses.",
+                            "next": 15
+                        },
+                        {
+                            "text": "Fala mais dessas energias aí enquanto eu finjo interesse.",
+                            "next": 16
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Mentira? Então a vibração era ilusória... você quebrou o karma do match.",
+                    "options": []
+                },
+                {
+                    "id": 9,
+                    "text": "VOCÊ ATREVE-SE A DIZER QUE MEU EGO PRECISA DE RETIRO???",
+                    "options": []
+                },
+                {
+                    "id": 10,
+                    "text": "Hmmm... Ametista... Respira... Tá. Vou ignorar sua ofensa... por agora.",
+                    "options": [
+                        {
+                            "text": "Gratidão, mestre do autocontrole.",
+                            "next": 15
+                        },
+                        {
+                            "text": "Você é tão zen que dá até medo.",
+                            "next": 16
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Rindo em 5D. Você é engraçadinho, mas tá quase desalinhando meu chakra frontal.",
+                    "options": [
+                        {
+                            "text": "Relaxa, toma uma kombucha e volta pro eixo.",
+                            "next": 17
+                        },
+                        {
+                            "text": "Já pensou em vender Wi-Fi esotérico?",
+                            "next": 14
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "No plano astral, o sinal é 100% — mas o roaming espiritual custa caro.",
+                    "options": [
+                        {
+                            "text": "Ainda bem que tô de chakra pré-pago.",
+                            "next": 17
+                        },
+                        {
+                            "text": "Você tá inventando tudo isso, né?",
+                            "next": 9
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "text": "Sim! Parcelado, mas com juros cármicos.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Meu marketing é apenas uma manifestação da abundância universal. E também pago os boletos, né?",
+                    "options": [
+                        {
+                            "text": "Justo. Até o Buda venderia e-book hoje em dia.",
+                            "next": 15
+                        },
+                        {
+                            "text": "Prefiro místicos raiz, sem QR code.",
+                            "next": 16
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "text": "Nossa sintonia tá quase perfeita... mas ainda sinto uma sombra em seu mapa astral.",
+                    "options": [
+                        {
+                            "text": "Talvez seja Saturno retrógrado... ou minha ex.",
+                            "next": 18
+                        },
+                        {
+                            "text": "Então me bloqueia com energia positiva e seguimos.",
+                            "next": 16
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "text": "Você não está pronto para a nova era. Sinto muito. Namastchau.",
+                    "options": []
+                },
+                {
+                    "id": 17,
+                    "text": "Ok... você me equilibrou. Mas ainda não confio no seu signo lunar.",
+                    "options": [
+                        {
+                            "text": "Então vou meditar até melhorar meu mapa.",
+                            "next": 18
+                        },
+                        {
+                            "text": "Ah não... você é desses.",
+                            "next": 9
+                        }
+                    ]
+                },
+                {
+                    "id": 18,
+                    "text": "O universo falou comigo agora. E ele disse... que isso não vai rolar.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Branquinha",
+            "age": 33,
+            "gender": "female",
+            "bio": "Se você nunca chorou ouvindo um violino desafinado, acho que não vai funcionar.",
+            "img": "",
+            "npc": "Branquinha, a Palhaça Trapezista Depressiva",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Você acredita no amor à primeira lágrima... ou preciso escorregar da lona de novo?",
+                    "options": [
+                        { "text": "Depende. Foi lágrima real ou glitter escorrendo?", "next": 2 },
+                        { "text": "Eu acredito mais em amor à segunda tentativa, sabe?", "next": 3 },
+                        { "text": "Já começou com poesia triste? Tô assustado e intrigado.", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Glitter também sofre... só brilha pra disfarçar.",
+                    "options": [
+                        { "text": "Nossa, isso daria uma música indie muito boa.", "next": 5 },
+                        { "text": "Você é tipo uma nuvem de emoções com nariz vermelho?", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Segundas tentativas só existem pra quem teve um primeiro ato feliz... eu sou só o drama.",
+                    "options": [
+                        { "text": "Então vamos fazer da tristeza um espetáculo.", "next": 7 },
+                        { "text": "Você já tentou terapia ou prefere só o picadeiro?", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Intrigado? Isso é o início da empatia... ou só mais uma confusão sentimental.",
+                    "options": [
+                        { "text": "Acho que tô me afeiçoando ao caos poético.", "next": 7 },
+                        { "text": "Você já riu de verdade ou só por profissão?", "next": 9 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Já escrevi essa frase num quadro... choveu dentro do circo no dia seguinte.",
+                    "options": [
+                        { "text": "Isso é lindo... e estranho. Igual você.", "next": 10 },
+                        { "text": "Você vive numa timeline paralela onde tudo é uma metáfora?", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Se uma nuvem sorrisse... ela seria eu. E também choveria muito nos ensaios.",
+                    "options": [
+                        { "text": "Você tá bem mesmo? Ou é só o personagem falando?", "next": 12 },
+                        { "text": "Eu também tenho dias nublados, sabia?", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Você diz isso agora... mas no segundo ato todos se vão, menos o eco do aplauso.",
+                    "options": [
+                        { "text": "Então vamos aplaudir o silêncio juntos.", "next": 14 },
+                        { "text": "Eu juro que fico pro terceiro ato. Se tiver pipoca.", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "O picadeiro é minha terapia. Entre confetes, encontrei meus traumas.",
+                    "options": [
+                        { "text": "Acho que acabei de rir e chorar ao mesmo tempo.", "next": 14 },
+                        { "text": "Isso é muito profundo pra um aplicativo de paquera.", "next": 16 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Sorrir com o rosto é fácil. Rir com o coração? Isso exige coragem de palhaço.",
+                    "options": [
+                        { "text": "Você é tipo uma poeta que caiu de um trapézio.", "next": 10 },
+                        { "text": "Posso rir com você, mesmo que seja só por dentro?", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Talvez sejamos apenas dois sorrisos procurando um sentido no breu.",
+                    "options": [
+                        { "text": "Ou dois narizes vermelhos perdidos no Tinder.", "next": 17 },
+                        { "text": "Isso é meio triste... mas romântico também.", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Meu mundo é feito de pinceladas tristes e malabarismos emocionais.",
+                    "options": []
+                },
+                {
+                    "id": 12,
+                    "text": "Não sei mais onde começa a maquiagem e termina a verdade.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Então talvez sejamos nuvens com formas diferentes... mas com a mesma chuva por dentro.",
+                    "options": [
+                        { "text": "Isso foi tão bonito que vou escrever no meu caderno invisível.", "next": 16 },
+                        { "text": "Branquinha, você é tipo um poema triste andando sobre um fio.", "next": 18 }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "text": "Aplausos silenciosos são os mais honestos... assim como os matches trágicos.",
+                    "options": []
+                },
+                {
+                    "id": 15,
+                    "text": "Não vai ter pipoca. Só lágrimas com gosto de algodão doce.",
+                    "options": []
+                },
+                {
+                    "id": 16,
+                    "text": "Acho que você não entendeu... ou entendeu demais. De qualquer forma, o espetáculo acabou.",
+                    "options": []
+                },
+                {
+                    "id": 17,
+                    "text": "Deslizamos pra direita, mas caímos no abismo do sentimento não correspondido.",
+                    "options": []
+                },
+                {
+                    "id": 18,
+                    "text": "Obrigada. Mas até os poemas se rasgam no vento... e esse encontro vai virar tinta no meu próximo quadro.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Kevin",
+            "age": 29,
+            "gender": "male",
+            "bio": "Só vou montar nessa relação se você aceitar que a gente viva no Velho Oeste… do espaço.",
+            "img": "",
+            "npc": "Kevin, o Ex-Boiadeiro Gamer com Síndrome de Cowboy Espacial",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Sabe... tem algo em você que me lembra uma tarde quente em Marte. Quer montar comigo nessa jornada interestelar ou vai ficar no curral da dúvida?",
+                    "options": [
+                        { "text": "Se tiver milkshake de ovomaltine no caminho, tô dentro.", "next": 2 },
+                        { "text": "Só se Constança aprovar. Não quero arrumar briga com sela ciumenta.", "next": 3 },
+                        { "text": "Cowboy no espaço? Isso é fanfic ou realidade alternativa?", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Milkshake e mirabolância, minha dupla favorita desde que larguei as esporas e abracei o teclado mecânico.",
+                    "options": [
+                        { "text": "Você ainda usa esporas só por estilo?", "next": 5 },
+                        { "text": "Eu sempre sonhei em amar alguém com nome de sela.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Constança sente o cheiro da falsidade pela conexão wi-fi. Mas parece que ela gostou de você... ou tá só cansada.",
+                    "options": [
+                        { "text": "Prometo escovar ela todo sábado e respeitar o espaço dela… sideral ou não.", "next": 7 },
+                        { "text": "Se ela me aceitar, já me sinto parte do rancho galáctico.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Fanfic? Moça(o), meu coração já duelou com meteoro por menos.",
+                    "options": [
+                        { "text": "Kevin, você é poesia em forma de vaquejada interplanetária.", "next": 6 },
+                        { "text": "E você já chorou vendo Toy Story, né?", "next": 9 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Uso esporas na alma. Toda conquista precisa de estilo e um leve tilintar dramático.",
+                    "options": [
+                        { "text": "Então você é o vaqueiro que trocou o laço por likes.", "next": 10 },
+                        { "text": "Se isso não é charme, não sei o que é.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Tem gente que carrega traumas. Eu carrego a Constança, meu passado e um sonho de amar alguém que entenda foguetes e ferraduras.",
+                    "options": [
+                        { "text": "Kevin, você é meu cometa montado num jegue estelar.", "next": 11 },
+                        { "text": "Isso foi tão bonito que até meu roteador piscou.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Você fala bonito... igual àqueles tutoriais que ensinam a conquistar vilas em Red Dead Online.",
+                    "options": [
+                        { "text": "Só que eu vim pra conquistar seu coração. E talvez sua stream também.", "next": 13 },
+                        { "text": "Sou mais bom de papo que de tiro, mas prometo tentar.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Se você sobreviveu à primeira live comigo gritando 'PEGA ESSA VACA CÓSMICA', já é dos meus.",
+                    "options": [
+                        { "text": "Eu sobrevivo até a duelos de emojis no chat.", "next": 13 },
+                        { "text": "Você deveria ser estudado. Ou amado. Talvez os dois.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Quando o Woody olha pro Buzz e diz que tem um amigo... eu me desmancho igual milkshake derretido.",
+                    "options": [
+                        { "text": "Isso é tão fofo que doeu no coração.", "next": 14 },
+                        { "text": "Kevin... você é um plot twist com chapéu.", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Likes são o novo gado. E eu tô aqui só tentando cuidar do rebanho sem perder a essência do sertão sideral.",
+                    "options": []
+                },
+                {
+                    "id": 11,
+                    "text": "Isso foi a frase mais brega que já ouvi. E por isso mesmo... me tocou fundo.",
+                    "options": [
+                        { "text": "Então a gente tem chance, Kevin?", "next": 15 },
+                        { "text": "Se não tiver, tudo bem. Mas posso assistir sua próxima live?", "next": 16 }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Eu tento parecer durão… mas cada elogio seu parece um pixel de amor entrando no meu inventário emocional.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Me ganhou. Mas infelizmente... perdi a conexão com o servidor da emoção.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Você fala bonito... mas meu coração acabou de crashar. Blue screen emocional.",
+                    "options": []
+                },
+                {
+                    "id": 15,
+                    "text": "Talvez... se o universo não tiver maintenance hoje. Mas acho que... caiu a conexão do destino.",
+                    "options": []
+                },
+                {
+                    "id": 16,
+                    "text": "Claro. Só não se apaixone mais, porque até o jogo tem fim... e a live de hoje foi nosso último ato.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Sônia",
+            "age": 42,
+            "gender": "female",
+            "bio": "Se não consegue me entender enquanto falo 'Aarrrr!', nem tenta me conquistar!",
+            "img": "",
+            "npc": "Sônia, a Chef de Sushi com Personalidade de Pirata",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Aarrrr! Chegou mais um marujo procurando meu tesouro ou só veio beliscar meu atum?",
+                    "options": [
+                        { "text": "Depende… seu tesouro vem com shoyu ou com mistério?", "next": 2 },
+                        { "text": "Beliscar seu atum? Isso foi uma cantada ou uma ameaça?", "next": 3 },
+                        { "text": "Só vim ver se essa ilha deserta tinha sinal de wi-fi e amor.", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Vem com uma pedrinha brilhante que achei na praia e uma folha de ouro (de papel).",
+                    "options": [
+                        { "text": "É assim que você tempera seus dates também?", "next": 5 },
+                        { "text": "Então você é romântica do jeito mais perigoso possível.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Foi uma cantameça. Técnica ancestral do sushi pirata.",
+                    "options": [
+                        { "text": "Perigosa e talentosa… igual um sashimi cortado com raiva.", "next": 6 },
+                        { "text": "Se eu sobreviver a esse date, ganho uma estrela Michelin?", "next": 7 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Ilha deserta não tem wi-fi, mas tem rum, lâminas afiadas e uma mulher que não aceita ser ghosteada.",
+                    "options": [
+                        { "text": "Com rum e emoção, já é melhor que muito encontro do Tinder.", "next": 5 },
+                        { "text": "Não planejava ser ghosteado por um sushi com tapa-olho, mas ok.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Eu aviso: me apaixono fácil quando alguém elogia minha faca.",
+                    "options": [
+                        { "text": "Então… sua faca brilha mais que meu futuro amoroso.", "next": 9 },
+                        { "text": "Não queria dizer nada, mas sua faca tem mais presença que meu ex.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Só sei ser perigosa na cozinha e nos sentimentos. Cuidado, marujo.",
+                    "options": [
+                        { "text": "Aceito afundar nesse navio emocional contigo.", "next": 11 },
+                        { "text": "Já fui ferido por amor, agora falta ser cortado por você.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Você ganha uma estrela... mas talvez fique com um cortezinho no ego também.",
+                    "options": []
+                },
+                {
+                    "id": 8,
+                    "text": "Ghosteado por mim? Só se afundar meu barco — e meu barco é blindado com nori!",
+                    "options": [
+                        { "text": "Então posso confiar meu coração e meu estômago a você?", "next": 11 },
+                        { "text": "Só se eu virar parte do cardápio romântico da noite.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Cuidado… elogios assim me fazem querer preparar o combinado do amor eterno.",
+                    "options": [
+                        { "text": "Manda vir o combinado. Mas sem wasabi emocional, por favor.", "next": 13 },
+                        { "text": "Será que cabe a sobremesa chamada 'relacionamento sério'?", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Gostei de você. Tem gosto por perigo… e isso me dá vontade de colocar glitter no arroz.",
+                    "options": []
+                },
+                {
+                    "id": 11,
+                    "text": "Te chamo de tesouro perdido, mas é só porque ainda não descobri seu mapa completo.",
+                    "options": [
+                        { "text": "Te dou o mapa… mas cada beijo revela uma coordenada.", "next": 13 },
+                        { "text": "Só cuidado pra não tropeçar nos sentimentos, Capitã.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Você fala como quem tá pronto pra sofrer bonito. Gosto disso.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Só tem um problema, marujo… meu coração já foi enterrado numa ilha deserta e esqueci onde.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Aarrrr… você me conquistou, mas o vento mudou. Esse navio do amor não parte hoje.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Clarice",
+            "age": 38,
+            "gender": "female",
+            "bio": "Se você não gosta de cheirar licor no meio da noite ou tomar uma cachaça em um picnic, me deixa em paz.",
+            "img": "",
+            "npc": "Clarice, a Rainha do Álcool Artesanal e Doce",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Oi! Quer provar meu novo licor de banana com essência de beijinho? Chama 'Paixão Etílica Nº7'.",
+                    "options": [
+                        { "text": "Se tiver açúcar e caos, eu aceito duas doses.", "next": 2 },
+                        { "text": "Tem gosto de amor ou de arrependimento?", "next": 3 },
+                        { "text": "Você sempre aborda as pessoas com bebida e afeto?", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Tem açúcar, tem caos, tem glitter comestível e um leve toque de fermento de bolso.",
+                    "options": [
+                        { "text": "Você é uma sobremesa com histórico de ressaca?", "next": 5 },
+                        { "text": "Isso explica por que tô tonto só de te ouvir.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Os dois! Amor no início, arrependimento no final — igual um shot de rum com Nutella.",
+                    "options": [
+                        { "text": "Isso soa como a melhor e pior ideia que já tive.", "next": 7 },
+                        { "text": "Clarice, você é uma sobremesa que anda e oferece perigo.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Só abordo quem tem cara de que toparia uma trufa alcoólica às 3 da manhã.",
+                    "options": [
+                        { "text": "Eu tenho cara de trufa vencida, mas topo.", "next": 5 },
+                        { "text": "Desde que não seja trufa com pimenta e vodca, tudo bem.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Você já misturou doce de leite com absinto? Porque eu já — e foi um momento espiritual.",
+                    "options": [
+                        { "text": "Isso soa como o tipo de loucura que quero viver num piquenique.", "next": 9 },
+                        { "text": "Me explica como sobreviveu pra contar essa história.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Cuidado… essa tontura é só a primeira fase da paixão etílica. Depois vem a dança das abelhas invisíveis.",
+                    "options": []
+                },
+                {
+                    "id": 7,
+                    "text": "Então toma! E se ficar bom, posso fazer um perfume com esse sabor!",
+                    "options": [
+                        { "text": "Clarice, você é o Willy Wonka das cachaças gourmet.", "next": 9 },
+                        { "text": "Promete que seu perfume não explode no calor?", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Pena. Eu tinha separado exatamente isso pra nosso brinde de boas-vindas.",
+                    "options": [
+                        { "text": "Tudo bem, posso fingir que é só refrigerante perigoso.", "next": 10 },
+                        { "text": "Se você me der um brigadeiro de emergência, aceito.", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Tô apaixonada. Quer dizer… ou é isso ou foi o licor de maracujá com goiabada. Me confundo às vezes.",
+                    "options": [
+                        { "text": "Confusão romântica etílica é a minha vibe também.", "next": 12 },
+                        { "text": "Tudo bem, eu também confundo sentimentos com sobremesas.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Fermento e fé, meu bem. Fermento e fé.",
+                    "options": []
+                },
+                {
+                    "id": 11,
+                    "text": "Brigadeiro de emergência? Aqui no bolso esquerdo. Licor explosivo? No direito.",
+                    "options": [
+                        { "text": "Você é literalmente um perigo doce ambulante.", "next": 12 },
+                        { "text": "É isso. Acabei de me apaixonar por um bolso.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Tem um detalhe… meus dates sempre acabam em açúcar derretido e confissões que ninguém lembra no dia seguinte.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Só tem um problema: eu me apaixono fácil por doces, mas nunca pelas pessoas que dividem eles comigo.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Fábio",
+            "age": 32,
+            "gender": "male",
+            "bio": "Eu sou perfeito, mas e você? O que tem no seu motor, além de uma boa aparência?",
+            "img": "",
+            "npc": "Fábio, o Mecânico Fashionista com Crise Existencial",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Oi. Notei que você olhou minha jaqueta de couro italiano. Ou foi meu carburador restaurado artesanalmente?",
+                    "options": [
+                        { "text": "Foi a combinação do seu motor V8 com seu colar da Prada.", "next": 2 },
+                        { "text": "Não decidi se quero te elogiar ou te levar pra uma lavagem a seco.", "next": 3 },
+                        { "text": "Você sempre troca óleo e existencialismo na mesma frase?", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Finalmente alguém que entende. Estilo e potência são irmãos siameses que a sociedade insiste em separar.",
+                    "options": [
+                        { "text": "Você é tipo um desfile da Ferrari com monólogo interno constante.", "next": 5 },
+                        { "text": "Acho que você é meu tipo: confuso, caro e com cheiro de graxa.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Ambos são válidos. Às vezes me pergunto se o amor é só uma mancha de graxa num tecido caro da alma.",
+                    "options": [
+                        { "text": "Ou uma troca de pneu emocional em pleno deserto existencial.", "next": 5 },
+                        { "text": "Você tem frases assim anotadas ou elas vêm naturalmente com o gel de cabelo?", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Sempre. Meu cabeleireiro disse que tenho uma aura de parafuso solto — e eu concordo.",
+                    "options": [
+                        { "text": "Se for esse o diagnóstico, quero ser sua chave inglesa emocional.", "next": 7 },
+                        { "text": "Entre sua aura e sua blusa Balenciaga com graxa, tô perdido.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Ontem chorei escutando uma música eletrônica enquanto passava cera num Mustang 68. Isso diz muito sobre mim.",
+                    "options": [
+                        { "text": "Diz que você é um paradoxo com pneus novos e coração desalinhado.", "next": 9 },
+                        { "text": "Diz que você precisa de terapia ou um porta-malas mais espaçoso pra guardar sentimentos.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Você me entende. Isso é raro. As pessoas acham que mecânico bonito não pode ser profundo.",
+                    "options": [
+                        { "text": "Bonito, profundo e engraxado? Você é praticamente um poema automotivo.", "next": 11 },
+                        { "text": "Você é tipo um Audi com alma de Clarice Lispector.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Não brinca com isso. Já fui chamado de chave inglesa emocional antes. Por um Audi TT... e por um sagitariano.",
+                    "options": [
+                        { "text": "Isso explica muita coisa e nada ao mesmo tempo.", "next": 9 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Entre nós dois, acho que só um de nós combina com couro legítimo e culpa catártica.",
+                    "options": [
+                        { "text": "Spoiler: não sou eu.", "next": 10 },
+                        { "text": "Combinar com culpa catártica é meu novo objetivo de vida.", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Já pensou que talvez o amor seja só a revisão de um carro que a gente nunca teve? Eu penso nisso toda quinta.",
+                    "options": [
+                        { "text": "Eu penso isso desde que meu último date fugiu com um borracheiro.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Você acha que se eu vender meu conversível e comprar uma bicicleta, a tristeza vai embora ou fica aerodinâmica?",
+                    "options": [
+                        { "text": "Fica aerodinâmica. Tristeza sempre se adapta ao modelo.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Queria te convidar pra um passeio de moto... mas acho que só vou acabar questionando o sentido da marcha lenta.",
+                    "options": [
+                        { "text": "Eu aceito — e prometo acelerar sua crise existencial.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Se Clarice Lispector fosse um carro, seria um Alfa Romeo, né? Tipo, linda, misteriosa e propensa a falhar.",
+                    "options": [
+                        { "text": "Amei. Me leva pro seu livro de manutenção emocional.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "text": "Você é incrível, de verdade. Mas... e se tudo isso for só reflexo de um farol mal regulado da vida?",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Esquece. Eu não consigo me entregar... ainda tô tentando entender se sou um hatch emocional ou só um sedã com trauma.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Tânia",
+            "age": 29,
+            "gender": "female",
+            "bio": "Se você não curte pet fashion, você não pode ser meu par. Eu visto até um iguana!",
+            "img": "",
+            "npc": "Tânia, a Estilista de Roupas para Animais de Estimação",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Oi, desculpa... sua camiseta não tem nem um lacinho? Nem um botãozinho glitter? Nossa.",
+                    "options": [
+                        { "text": "Posso colocar um lacinho se for por você... ou por um gato bem vestido.", "next": 2 },
+                        { "text": "Minha camiseta é básica, mas meu coração tem babados e amor por pets.", "next": 3 },
+                        { "text": "Olha, até tentei me arrumar, mas meu cachorro comeu meu cachecol.", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Hmm… potencial. Mas só se o lacinho tiver temática de coala elegante tomando chá.",
+                    "options": [
+                        { "text": "E se eu usar um suéter com estampa de chihuahua astronauta?", "next": 5 },
+                        { "text": "Eu aceito virar o manequim dos seus sonhos, só me dá um tema.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Ok, vou fingir que você não disse isso só pra me conquistar. Mas já gostei da vibe 'emo fofo'.",
+                    "options": [
+                        { "text": "Quer que eu prove meu amor fazendo um chapéu de crochê pra uma tartaruga?", "next": 7 },
+                        { "text": "Me chama de pet e me veste com amor.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Se o cachorro comeu, é porque o cachecol não era digno. Os meus pets têm paladar refinado.",
+                    "options": [
+                        { "text": "Então você entende o sofrimento de conviver com ícones de estilo caninos.", "next": 9 },
+                        { "text": "Meu cachorro só usa bandana de oncinha. Ele me humilha.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "MEU DEUS. Eu ia lançar essa coleção em setembro. Como você sabia???",
+                    "options": [
+                        { "text": "Chihuahua astronáutico tá no meu sangue. Literalmente, sou de Gêmeos.", "next": 11 },
+                        { "text": "Acho que somos almas ligadas por satélites e acessórios felpudos.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Tá... 'tema livre'. Mas se eu te vestir de esquilo mágico da floresta, você segura o look?",
+                    "options": [
+                        { "text": "Se tiver glitter, sim. Se tiver um hamster desfilando comigo, sim sim.", "next": 13 },
+                        { "text": "Me transforma num ícone fashion interespécie, Tânia.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Ok, ponto pra você. Mas tem que ser crochê fino. Tartarugas têm reputação a zelar.",
+                    "options": [
+                        { "text": "Claro, minha avó já tá separando as linhas neon.", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Você seria um ótimo gato persa. Sério, tô até vendo um coletinho em azul bebê com gola de babado.",
+                    "options": [
+                        { "text": "Meow em francês. Traduz: eu te acho chique.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "É horrível ser ofuscada por um pinscher com sobretudo de couro e óculos escuros, né?",
+                    "options": [
+                        { "text": "É... mas eu aceito ficar em segundo lugar. Desde que seja no seu coração.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Oncinha é o novo básico. Seu cachorro já tá na frente de 90% dos humanos.",
+                    "options": [
+                        { "text": "Então você tá dizendo que eu tenho que aprender com ele?", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Tá bom. Mas se você também prever minha coleção de porquinhos-da-índia piratas, vou desconfiar.",
+                    "options": [
+                        { "text": "Eu vi isso num sonho. Com um porquinho usando tapa-olho e calça xadrez.", "next": 16 }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "text": "Você parece mesmo do tipo que colocaria um cachecol num peixe só pra combinar com a vibe.",
+                    "options": [
+                        { "text": "Já fiz isso. O peixe chamava Cláudio e era um visionário.", "next": 16 }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "text": "Você é fofo. Mas… eu não sei se conseguiria namorar alguém que não entende o drama de um pug fora de moda.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Você é um ícone. Mas… ainda sinto que você não levaria a sério um desfile de gatos vestidos de unicórnio cósmico.",
+                    "options": []
+                },
+                {
+                    "id": 15,
+                    "text": "Isso é fofo demais. E fofo demais me assusta. Prefiro sofrer com um schnauzer que me rejeita do que aceitar a felicidade.",
+                    "options": []
+                },
+                {
+                    "id": 16,
+                    "text": "Você é muito perfeito. É por isso que não vai dar certo. Minhas criações precisam de sofrimento para florescer.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Douglas",
+            "age": 33,
+            "gender": "male",
+            "bio": "Só se você acreditar que o futuro é agora e viajar comigo para 2045, onde o amor é eterno!",
+            "img": "",
+            "npc": "Douglas, o Cientista Maluco que Acha Que Pode Controlar o Tempo",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Você chegou exatamente 3,8 segundos atrasado(a)... isso significa que o destino interveio. Fascinante.",
+                    "options": [
+                        { "text": "Ou talvez o destino só não calibrou o relógio, doutor.", "next": 2 },
+                        { "text": "Mas ainda cheguei a tempo de te conhecer. Isso que importa, né?", "next": 3 },
+                        { "text": "Desculpa, fiquei preso(a) em um vórtice de sentimentos.", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Hmmm... interessante. Humor ácido e raciocínio lógico. Você seria um ótimo assistente de laboratório.",
+                    "options": [
+                        { "text": "Prefiro ser sua parceira(o) temporal. Ajudar e beijar, nessa ordem.", "next": 5 },
+                        { "text": "Desde que eu não precise mexer em plutônio, tô dentro.", "next": 6 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Poético. Em 2045, essa frase é considerada uma cantada clássica entre robôs sensíveis.",
+                    "options": [
+                        { "text": "Então quer dizer que sou uma lenda do flerte futuro?", "next": 7 },
+                        { "text": "Mal posso esperar pra te beijar na frente de um pôr-do-sol cibernético.", "next": 8 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Sentimentos... a força mais imprevisível da física. Quase tão instável quanto minha máquina do tempo caseira.",
+                    "options": [
+                        { "text": "Se ela falhar, a gente volta no tempo e tenta de novo, né?", "next": 9 },
+                        { "text": "Instável também sou eu quando você me olha assim com esse jaleco sensual.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Gostei. Espírito aventureiro, coragem emocional e interesse em beijos. A combinação ideal para viajar pelo contínuo espaço-tempo do amor.",
+                    "options": [
+                        { "text": "Tô pronto(a). Liga a máquina, Douglas. Que venha o amanhã!", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "Ah, não se preocupe. Desde que o gato do vizinho parou de desaparecer, tá tudo mais estável no porão.",
+                    "options": [
+                        { "text": "Por acaso esse gato usava um capacete de alumínio?", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Sim. E tem uma estátua sua no museu do flerte do futuro. Está vestido(a) de neon e segurando um cupcake radioativo.",
+                    "options": [
+                        { "text": "Como você sabe? Você já foi pra lá?", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Romântico e tecnologicamente excitante. Você está me fazendo reconsiderar o conceito de tempo absoluto.",
+                    "options": [
+                        { "text": "Eu só quero te fazer repensar o conceito de 'ficar sozinho'.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Errado. Se falhar, a gente cria uma nova linha temporal. E nela, você sempre diz sim pro meu convite de piquenique na Lua.",
+                    "options": [
+                        { "text": "Só se tiver suco de gravidade e bolo de antimatéria.", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Não diga essas coisas, meu coração já está em colapso quântico.",
+                    "options": [
+                        { "text": "Você é o colisor de partículas que acelerou meu amor.", "next": 16 }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Ah... droga. O capacitor de fluxo estourou de novo. Acho que vamos ter que viajar do jeito antigo: conversando.",
+                    "options": []
+                },
+                {
+                    "id": 12,
+                    "text": "Sim. O capacete era dele. Eu só emprestei a esteira temporal. Ele gostava de correr no tempo, literalmente.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Sim. Só consegui ir por 13 minutos antes de ser expulso por alterar a timeline beijando você em público.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Você é perigoso(a). Do tipo que altera a gravidade do meu laboratório emocional.",
+                    "options": []
+                },
+                {
+                    "id": 15,
+                    "text": "Feito. Anotado no diário temporal. Aniversário da linha alternativa: hoje mesmo.",
+                    "options": []
+                },
+                {
+                    "id": 16,
+                    "text": "Você pode não acreditar, mas isso foi exatamente o que você me disse... no ano 2032. Estamos presos num loop do amor.",
+                    "options": []
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Kátia",
+            "age": 47,
+            "gender": "female",
+            "bio": "Se você não sabe o que é um 'mix tape', nem tenta me impressionar.",
+            "img": "",
+            "npc": "Kátia, a Diretora de Escola que É Fanática por Fitas Cassete",
+            "dialogues": [
+                {
+                    "id": 1,
+                    "text": "Pontualidade. Gosto disso. Na minha escola, o sinal toca e quem não tá na sala leva advertência.",
+                    "options": [
+                        { "text": "Ok, diretora. Mas prometo ser um(a) aluno(a) exemplar do amor.", "next": 2 },
+                        { "text": "E se eu te dissesse que trouxe um walkman e uma fita gravada só pra você?", "next": 3 },
+                        { "text": "Só não me dá detenção por ter te achado incrível.", "next": 4 }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "text": "Veremos... Disciplina é essencial. Mas preciso admitir: sua resposta teve um toque de charme adolescente.",
+                    "options": [
+                        { "text": "Tenho um lado rebelde, mas só pra te impressionar.", "next": 5 }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "text": "Você... *você gravou uma fita?* Com faixas sequenciadas?! Sem pular faixa?!",
+                    "options": [
+                        { "text": "Sim, e a primeira música é 'Take On Me'. Se não der certo, já sei que não é amor.", "next": 6 },
+                        { "text": "Gravada direto da rádio, com chiado e tudo. Do jeitinho que você gosta.", "next": 7 }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "text": "Pela sua ousadia, te daria uma detenção… mas você ganharia minha atenção na hora do recreio.",
+                    "options": [
+                        { "text": "Podemos ouvir Roxette juntos, escondidos na sala da direção?", "next": 8 },
+                        { "text": "Recreio comigo é embaixo da arquibancada, com slow dance e fita cassete.", "next": 9 }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "text": "Rebeldia com propósito... Isso me lembra meu primeiro crush no professor de química. Ele gravou uma fita pra mim com 'Eye of the Tiger'.",
+                    "options": [
+                        { "text": "Aposto que ele nunca foi tão estiloso quanto você com esse blazer retrô.", "next": 10 }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "text": "*A-ha* no início de uma fita?! Você quer o meu coração ou o cargo de vice-diretor do meu coração?",
+                    "options": [
+                        { "text": "Posso ser seu(a) vice em qualquer timeline, contanto que tenha um solo de teclado.", "next": 11 }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "text": "Você entende... O chiado é a alma da fita. A imperfeição da gravação é o toque do amor.",
+                    "options": [
+                        { "text": "Eu sou sua imperfeição romântica gravada em fita. Aperta o play.", "next": 12 }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "text": "Só se você prometer rebobinar a fita depois. Eu detesto quando deixam no fim.",
+                    "options": [
+                        { "text": "Rebobino com carinho. Até faço o som de 'rrrrr' com a boca se quiser.", "next": 13 }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "text": "Slow dance? Fita? Debaixo da arquibancada? Você tá tentando recriar meus anos dourados ou me conquistar mesmo?",
+                    "options": [
+                        { "text": "Ambos. E ainda vou te dar uma rosa feita com papel de fichário.", "next": 14 }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "text": "Ele usava jaleco. Eu uso ombreiras. O verdadeiro poder sempre esteve na postura.",
+                    "options": [
+                        { "text": "Então deixa eu ver seu lado sem postura. Tira o blazer... e coloca 'Careless Whisper'.", "next": 15 }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "text": "Tá decidido. Você vai liderar o grêmio dos sentimentos retro comigo.",
+                    "options": []
+                },
+                {
+                    "id": 12,
+                    "text": "Com você, nem precisa de botão auto-reverse. Eu ficaria ouvindo do lado A ao Z.",
+                    "options": []
+                },
+                {
+                    "id": 13,
+                    "text": "Meu Deus... você entendeu tudo. Tudo. Esse é o som do amor: 'rrrrrrrrr-click'.",
+                    "options": []
+                },
+                {
+                    "id": 14,
+                    "text": "Se tiver perfume no papel, eu te dou meu coração e o acervo inteiro de K7 dos Men at Work.",
+                    "options": []
+                },
+                {
+                    "id": 15,
+                    "text": "Você sabe mesmo como mexer com uma diretora... vou fingir que não ouvi isso, mas já coloquei a fita pra tocar.",
+                    "options": []
+                }
+            ]
+        }
+    ]
+}

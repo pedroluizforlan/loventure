@@ -2,8 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-
-    kotlin("kapt")
+    id("kotlin-kapt")
 }
 
 android {
@@ -60,10 +59,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Room Database
-    implementation("androidx.room:room-runtime:2.5.0")
-    kapt("androidx.room:room-compiler:2.5.0")
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
     // Kotlin Extensions for Room
-    implementation("androidx.room:room-ktx:2.5.0")
+    implementation("androidx.room:room-ktx:2.6.1")
     //Gson
     implementation("com.google.code.gson:gson:2.8.8")
 
