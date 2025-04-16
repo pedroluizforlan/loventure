@@ -2,10 +2,12 @@ package com.unifil.loventure.data.model
 
 
 data class Npc(
-    val id: Integer,
+    val id: Int,
     val name: String,
-    val age: Integer,
+    val age: Int,
     val bio: String,
     val img: String,
-    val dialogues:List<Dialogue>
+    val npc: String,
+    val gender: String,
+    val dialogues: List<Dialogue>
 )

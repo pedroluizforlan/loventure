@@ -1,10 +1,85 @@
 package com.unifil.loventure.ui.screen
 
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.unifil.loventure.data.model.Npc
+import com.unifil.loventure.data.model.Dialogue
+import com.unifil.loventure.data.model.Option
 
 @Composable
-fun ChatScreen(navController: NavHostController) {
-    Text("Tela de Conversa com o NPC")
+fun ChatScreen(navController: NavHostController, npc: Npc) {
+    var currentDialogueId by remember { mutableStateOf(1) } // Começa pelo ID 1
+    var chatHistory by remember { mutableStateOf<List<Pair<String, Boolean>>>(emptyList()) }
+
+    val currentDialogue = npc.dialogues.find { it.id == currentDialogueId }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        Text("💬 Conversa com ${npc.name}", style = MaterialTheme.typography.titleLarge)
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        LazyColumn(
+            modifier = Modifier.weight(1f)
+        ) {
+            items(chatHistory) { (message, isUser) ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 4.dp),
+                    horizontalArrangement = if (isUser) Arrangement.End else Arrangement.Start
+                ) {
+                    Text(
+                        text = message,
+                        color = if (isUser) Color.White else Color.Black,
+                        modifier = Modifier
+                            .background(if (isUser) Color(0xFF25D366) else Color(0xFFECECEC))
+                            .padding(12.dp)
+                    )
+                }
+            }
+        }
+
+        Divider()
+
+        currentDialogue?.let { dialogue ->
+            // Adiciona a mensagem do NPC à história se ainda não estiver
+            LaunchedEffect(currentDialogueId) {
+                if (chatHistory.none { it.first == dialogue.text }) {
+                    chatHistory = chatHistory + (dialogue.text to false)
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+            Column {
+                dialogue.options.forEach { option ->
+                    Button(
+                        onClick = {
+                            chatHistory = chatHistory + (option.text to true)
+                            currentDialogueId = option.next
+                        },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 4.dp)
+                    ) {
+                        Text(option.text)
+                    }
+                }
+            }
+        } ?: run {
+            Text("Fim da conversa.")
+        }
+    }
 }
