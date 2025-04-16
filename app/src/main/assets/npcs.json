@@ -4,8 +4,8 @@
             "id": 1,
             "name": "Zuleika Gator",
             "age": 55,
-            "bio": "Se não sabe a diferença entre um teiú e um calango,   nem adianta deslizar pra direita.",
-            "img": "",
+            "bio": "Se não sabe a diferença entre um teiú e um calango, nem adianta deslizar pra direita.",
+            "img": "assets/pics/1-Zuleika.png",
             "gender":"female",
             "npc":"Zuleika, a Professora Caminhoneira dos Lagartos",
             "dialogues": [
@@ -208,7 +208,7 @@
             "name": "Dário Luz",
             "age": 39,
             "bio": "Se tua aura não combinar com a minha, o universo não vai conspirar...",
-            "img": "",
+            "img": "assets/pics/2-Dario.png",
             "npc": "Dário, o Ex-Monge Influencer Espiritual",
             "gender":"male",
             "dialogues": [
@@ -427,11 +427,11 @@
         },
         {
             "id": 3,
-            "name": "Branquinha",
+            "name": "Branquinha Palhaça",
             "age": 33,
             "gender": "female",
             "bio": "Se você nunca chorou ouvindo um violino desafinado, acho que não vai funcionar.",
-            "img": "",
+            "img": "assets/pics/3-Branquinha.png",
             "npc": "Branquinha, a Palhaça Trapezista Depressiva",
             "dialogues": [
                 {
@@ -562,11 +562,11 @@
         },
         {
             "id": 4,
-            "name": "Kevin",
+            "name": "Kevin Rednack",
             "age": 29,
             "gender": "male",
             "bio": "Só vou montar nessa relação se você aceitar que a gente viva no Velho Oeste… do espaço.",
-            "img": "",
+            "img": "assets/pics/4-Kevin.png",
             "npc": "Kevin, o Ex-Boiadeiro Gamer com Síndrome de Cowboy Espacial",
             "dialogues": [
                 {
@@ -684,11 +684,11 @@
         },
         {
             "id": 5,
-            "name": "Sônia",
+            "name": "Sônia Sparrow",
             "age": 42,
             "gender": "female",
             "bio": "Se não consegue me entender enquanto falo 'Aarrrr!', nem tenta me conquistar!",
-            "img": "",
+            "img": "assets/pics/5-Sonia.png",
             "npc": "Sônia, a Chef de Sushi com Personalidade de Pirata",
             "dialogues": [
                 {
@@ -793,11 +793,11 @@
         },
         {
             "id": 6,
-            "name": "Clarice",
+            "name": "Clarice Capone",
             "age": 38,
             "gender": "female",
             "bio": "Se você não gosta de cheirar licor no meio da noite ou tomar uma cachaça em um picnic, me deixa em paz.",
-            "img": "",
+            "img": "assets/pics/6-Clarice.png",
             "npc": "Clarice, a Rainha do Álcool Artesanal e Doce",
             "dialogues": [
                 {
@@ -897,11 +897,11 @@
         },
         {
             "id": 7,
-            "name": "Fábio",
+            "name": "Fábio McQueen",
             "age": 32,
             "gender": "male",
             "bio": "Eu sou perfeito, mas e você? O que tem no seu motor, além de uma boa aparência?",
-            "img": "",
+            "img": "assets/pics/7-Fabio.png",
             "npc": "Fábio, o Mecânico Fashionista com Crise Existencial",
             "dialogues": [
                 {
@@ -1010,11 +1010,11 @@
         },
         {
             "id": 8,
-            "name": "Tânia",
+            "name": "Tânia Versace",
             "age": 29,
             "gender": "female",
             "bio": "Se você não curte pet fashion, você não pode ser meu par. Eu visto até um iguana!",
-            "img": "",
+            "img": "assets/pics/8-Tania.png",
             "npc": "Tânia, a Estilista de Roupas para Animais de Estimação",
             "dialogues": [
                 {
@@ -1132,11 +1132,11 @@
         },
         {
             "id": 9,
-            "name": "Douglas",
+            "name": "Douglas McFly",
             "age": 33,
             "gender": "male",
             "bio": "Só se você acreditar que o futuro é agora e viajar comigo para 2045, onde o amor é eterno!",
-            "img": "",
+            "img": "assets/pics/9-Douglas.png",
             "npc": "Douglas, o Cientista Maluco que Acha Que Pode Controlar o Tempo",
             "dialogues": [
                 {
@@ -1248,11 +1248,11 @@
         },
         {
             "id": 10,
-            "name": "Kátia",
+            "name": "Kátia Girafales",
             "age": 47,
             "gender": "female",
             "bio": "Se você não sabe o que é um 'mix tape', nem tenta me impressionar.",
-            "img": "",
+            "img": "assets/pics/10-Katia.png",
             "npc": "Kátia, a Diretora de Escola que É Fanática por Fitas Cassete",
             "dialogues": [
                 {
