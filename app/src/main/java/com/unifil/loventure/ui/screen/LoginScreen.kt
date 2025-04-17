@@ -7,14 +7,29 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.room.Room
+import com.unifil.loventure.data.local.AppDatabase
+import com.unifil.loventure.data.repository.UserRepository
 import com.unifil.loventure.ui.navigation.NavRoutes
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 @Composable
 fun LoginScreen(navController: NavHostController) {
+    val context = LocalContext.current
+    val db = Room.databaseBuilder(context, AppDatabase::class.java, "loventure-db") .fallbackToDestructiveMigration().build()
+    val userDao = db.userDao()
+    val userRepository = remember { UserRepository(userDao) }
+
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
+    var isRegisterMode by remember { mutableStateOf(false) }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
 
     Column(
         modifier = Modifier
@@ -23,7 +38,10 @@ fun LoginScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Bem-vindo ao Loventure!", style = MaterialTheme.typography.headlineSmall)
+        Text(
+            if (isRegisterMode) "Cadastro" else "Login",
+            style = MaterialTheme.typography.headlineSmall
+        )
         Spacer(modifier = Modifier.height(24.dp))
 
         OutlinedTextField(
@@ -49,12 +67,50 @@ fun LoginScreen(navController: NavHostController) {
 
         Button(
             onClick = {
-                // Aqui simula o login, depois implementamos de verdade
-                navController.navigate(NavRoutes.NPC_LIST)
+                if (username.isBlank() || password.isBlank()) {
+                    errorMessage = "Preencha todos os campos"
+                    return@Button
+                }
+
+                CoroutineScope(Dispatchers.IO).launch {
+                    try {
+                        val user = if (isRegisterMode) {
+                            userRepository.register(username, password)
+                        } else {
+                            userRepository.login(username, password)
+                                ?: throw Exception("Usuário ou senha inválidos")
+                        }
+
+                        withContext(Dispatchers.Main) {
+                            navController.navigate(NavRoutes.NPC_LIST)
+                        }
+                    } catch (e: Exception) {
+                        withContext(Dispatchers.Main) {
+                            errorMessage = e.message
+                        }
+                    }
+                }
             },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Entrar")
+            Text(if (isRegisterMode) "Cadastrar" else "Entrar")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        TextButton(onClick = { isRegisterMode = !isRegisterMode }) {
+            Text(
+                if (isRegisterMode)
+                    "Já tem conta? Faça login"
+                else
+                    "Não tem conta? Cadastre-se"
+            )
+        }
+
+        errorMessage?.let {
+            Spacer(modifier = Modifier.height(16.dp))
+            Text(it, color = MaterialTheme.colorScheme.error)
         }
     }
 }
+
