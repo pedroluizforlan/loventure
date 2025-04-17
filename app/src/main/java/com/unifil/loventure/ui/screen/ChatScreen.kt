@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -17,9 +16,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.unifil.loventure.data.local.AppDatabase
 import com.unifil.loventure.data.local.entity.ConversationMessage
+import com.unifil.loventure.data.local.entity.ConversationState
 import com.unifil.loventure.data.model.Npc
-import com.unifil.loventure.data.model.Dialogue
-import com.unifil.loventure.data.model.Option
 import com.unifil.loventure.ui.navigation.NavRoutes
 import kotlinx.coroutines.launch
 
@@ -34,11 +32,44 @@ fun ChatScreen(
     val coroutineScope = rememberCoroutineScope()
     var chatHistory by remember { mutableStateOf<List<Pair<String, Boolean>>>(emptyList()) }
     var currentDialogueId by remember { mutableStateOf(1) }
+    val stateDao = database.conversationStateDao()
 
     LaunchedEffect(Unit) {
         val savedMessages = messageDao.getMessagesForConversation(userId!!, npc.id)
+        val savedState = stateDao.getConversationState(userId, npc.id)
+
+
+        if (savedState != null) {
+            currentDialogueId = savedState.currentDialogueId
+        }
+
         chatHistory = savedMessages.map { it.message to it.isUser }
+
+        if (savedMessages.isEmpty()) {
+            val initialDialogue = npc.dialogues.find { it.id == currentDialogueId }
+            initialDialogue?.let {
+                chatHistory = chatHistory + (it.text to false)
+                messageDao.insert(
+                    ConversationMessage(
+                        userId = userId,
+                        npcId = npc.id,
+                        message = it.text,
+                        isUser = false
+                    )
+                )
+
+
+                stateDao.insert(
+                    ConversationState(
+                        userId = userId,
+                        npcId = npc.id,
+                        currentDialogueId = currentDialogueId
+                    )
+                )
+            }
+        }
     }
+
 
     val currentDialogue = npc.dialogues.find { it.id == currentDialogueId }
 
@@ -106,10 +137,24 @@ fun ChatScreen(
 
                             coroutineScope.launch {
                                 messageDao.insert(
-                                    ConversationMessage(userId = userId!!, npcId = npc.id, message = option.text, isUser = true)
+                                    ConversationMessage(
+                                        userId = userId!!,
+                                        npcId = npc.id,
+                                        message = option.text,
+                                        isUser = true
+                                    )
+                                )
+
+                                stateDao.insertOrUpdate(
+                                    ConversationState(
+                                        userId = userId,
+                                        npcId = npc.id,
+                                        currentDialogueId = option.next
+                                    )
                                 )
                             }
-                        },
+                        }
+                        ,
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFCE4EC)),
                         modifier = Modifier
                             .fillMaxWidth()

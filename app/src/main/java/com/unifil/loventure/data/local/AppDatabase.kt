@@ -11,7 +11,7 @@ import com.unifil.loventure.data.local.entity.ConversationMessage
 import com.unifil.loventure.data.local.entity.ConversationState
 import com.unifil.loventure.data.local.entity.User
 
-@Database(entities = [User::class, ConversationState::class, ConversationMessage::class], version = 4)
+@Database(entities = [User::class, ConversationState::class, ConversationMessage::class], version = 5)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun conversationStateDao(): ConversationStateDao

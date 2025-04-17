@@ -12,4 +12,6 @@ interface ConversationStateDao {
 
     @Query("SELECT * FROM conversation_state_table WHERE userId = :userId AND npcId = :npcId")
     suspend fun getConversationState(userId: Int, npcId: Int): ConversationState
+
+    suspend fun insertOrUpdate(state: ConversationState) = insert(state)
 }
