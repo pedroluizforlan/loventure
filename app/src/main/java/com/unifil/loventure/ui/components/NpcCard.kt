@@ -9,31 +9,48 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 import com.unifil.loventure.R
 import com.unifil.loventure.data.model.Npc
+import com.unifil.loventure.util.loadAssetImage
+
 
 @Composable
 fun NpcCard(npc: Npc, onClick: () -> Unit) {
+    val image = loadAssetImage(npc.img)
+
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)
             .clickable { onClick() }
     ) {
-        Row(modifier = Modifier.padding(16.dp)) {
-            Image(
-                painter = painterResource(id = R.drawable.npc_placeholder),
-                contentDescription = npc.name,
-                modifier = Modifier
-                    .size(64.dp),
-                contentScale = ContentScale.Crop
-            )
+        Column {
+            if (image != null) {
+                Image(
+                    bitmap = image,
+                    contentDescription = npc.name,
+                    modifier = Modifier
+                        .fillMaxWidth(),
 
-            Spacer(modifier = Modifier.width(16.dp))
+                    contentScale = ContentScale.Fit
+                )
+            } else {
+                // Fallback caso a imagem não carregue
+                Image(
+                    painter = painterResource(id = R.drawable.npc_placeholder),
+                    contentDescription = "Imagem padrão",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(200.dp),
+                    contentScale = ContentScale.Crop
+                )
+            }
 
-            Column {
+            Column(modifier = Modifier.padding(16.dp)) {
                 Text(npc.name, style = MaterialTheme.typography.titleMedium)
                 Text("${npc.age} anos", style = MaterialTheme.typography.bodySmall)
                 Text(npc.bio, style = MaterialTheme.typography.bodyMedium, maxLines = 2)
@@ -41,3 +58,4 @@ fun NpcCard(npc: Npc, onClick: () -> Unit) {
         }
     }
 }
+
