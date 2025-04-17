@@ -20,7 +20,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 @Composable
-fun LoginScreen(navController: NavHostController) {
+fun LoginScreen(navController: NavHostController,
+                onLoginSuccess: (Int) -> Unit) {
     val context = LocalContext.current
     val db = Room.databaseBuilder(context, AppDatabase::class.java, "loventure-db") .fallbackToDestructiveMigration().build()
     val userDao = db.userDao()
@@ -82,6 +83,7 @@ fun LoginScreen(navController: NavHostController) {
                         }
 
                         withContext(Dispatchers.Main) {
+                            onLoginSuccess(user.id)
                             navController.navigate(NavRoutes.NPC_LIST)
                         }
                     } catch (e: Exception) {
