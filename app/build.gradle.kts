@@ -91,4 +91,7 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.3.2")
     implementation("androidx.compose.material3:material3-window-size-class:1.3.2")
     implementation("androidx.compose.material3:material3-adaptive-navigation-suite:1.4.0-alpha12")
+    implementation("androidx.compose.material:material-icons-extended:1.3.2")
+//    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
+
 }
