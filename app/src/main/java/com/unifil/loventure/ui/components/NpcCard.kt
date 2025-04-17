@@ -8,9 +8,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 import com.unifil.loventure.R
@@ -39,7 +41,7 @@ fun NpcCard(npc: Npc, onClick: () -> Unit) {
                     contentScale = ContentScale.Fit
                 )
             } else {
-                // Fallback caso a imagem não carregue
+
                 Image(
                     painter = painterResource(id = R.drawable.npc_placeholder),
                     contentDescription = "Imagem padrão",
@@ -51,9 +53,10 @@ fun NpcCard(npc: Npc, onClick: () -> Unit) {
             }
 
             Column(modifier = Modifier.padding(16.dp)) {
-                Text(npc.name, style = MaterialTheme.typography.titleMedium)
+                Text(npc.name, style = MaterialTheme.typography.titleLarge, color = Color.Black, fontWeight = FontWeight.Bold)
                 Text("${npc.age} anos", style = MaterialTheme.typography.bodySmall)
-                Text(npc.bio, style = MaterialTheme.typography.bodyMedium, maxLines = 2)
+                Spacer(modifier = Modifier.height(10.dp))
+                Text(npc.bio, style = MaterialTheme.typography.bodyLarge, maxLines = 2)
             }
         }
     }

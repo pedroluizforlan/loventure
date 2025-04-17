@@ -4,11 +4,15 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.unifil.loventure.data.local.AppDatabase
@@ -16,6 +20,7 @@ import com.unifil.loventure.data.local.entity.ConversationMessage
 import com.unifil.loventure.data.model.Npc
 import com.unifil.loventure.data.model.Dialogue
 import com.unifil.loventure.data.model.Option
+import com.unifil.loventure.ui.navigation.NavRoutes
 import kotlinx.coroutines.launch
 
 @Composable
@@ -37,8 +42,26 @@ fun ChatScreen(
 
     val currentDialogue = npc.dialogues.find { it.id == currentDialogueId }
 
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        Text("💬 Conversa com ${npc.name}", style = MaterialTheme.typography.titleLarge)
+    Column(modifier = Modifier.fillMaxSize().background(Color(0xFFE91E63)).padding(16.dp)) {
+        Spacer(modifier = Modifier.height(30.dp))
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            IconButton(onClick = { navController.navigate(NavRoutes.NPC_LIST) }) {
+                Icon(
+                    imageVector = Icons.Default.ArrowBack,
+                    contentDescription = "Voltar",
+                    tint = Color.Black
+                )
+            }
+            Text(
+                text = "${npc.name} 💬",
+                style = MaterialTheme.typography.titleLarge,
+                color = Color.Black,
+                fontWeight = FontWeight.Bold
+            )
+        }
         Spacer(modifier = Modifier.height(16.dp))
 
         LazyColumn(modifier = Modifier.weight(1f)) {
@@ -51,7 +74,7 @@ fun ChatScreen(
                         text = message,
                         color = if (isUser) Color.White else Color.Black,
                         modifier = Modifier
-                            .background(if (isUser) Color(0xFF25D366) else Color(0xFFECECEC))
+                            .background(if (isUser) Color(0xFFF48FB1) else Color(0xFFECECEC))
                             .padding(12.dp)
                     )
                 }
@@ -87,11 +110,12 @@ fun ChatScreen(
                                 )
                             }
                         },
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFCE4EC)),
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(vertical = 4.dp)
+                            .padding(vertical = 4.dp),
                     ) {
-                        Text(option.text)
+                        Text(option.text, color = Color.Black)
                     }
                 }
             }
